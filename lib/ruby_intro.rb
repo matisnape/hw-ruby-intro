@@ -3,7 +3,13 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
+  sum = 0
+  if arr.length > 0
+    arr.each do |num|
+      sum += num
+    end
+  end
+  sum
 end
 
 def max_2_sum arr
