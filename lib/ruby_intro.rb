@@ -13,7 +13,14 @@ def sum arr
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+  max_2_sum = 0
+  if arr.length == 1 || arr.uniq.length == 1
+    max_2_sum = arr[0]
+  elsif arr.length > 1
+    sorted = arr.sort
+    max_2_sum = sorted.last + sorted[-2]
+  end
+  max_2_sum
 end
 
 def sum_to_n? arr, n
