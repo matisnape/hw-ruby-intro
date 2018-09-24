@@ -24,7 +24,11 @@ def max_2_sum arr
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  if arr.length <= 1
+    return false
+  else
+    return !!arr.combination(2).find{ |x,y| x + y == n}
+  end
 end
 
 # Part 2
