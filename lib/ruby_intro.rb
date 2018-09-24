@@ -27,14 +27,14 @@ def sum_to_n? arr, n
   if arr.length <= 1
     return false
   else
-    return !!arr.combination(2).find{ |x,y| x + y == n}
+    return !!arr.combination(2).find{ |x,y| x + y == n }
   end
 end
 
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+  "Hello, " + name
 end
 
 def starts_with_consonant? s
