@@ -48,7 +48,7 @@ def starts_with_consonant? s
 end
 
 def binary_multiple_of_4? s
-  if s.match?(/^[0-1]{1,}$/) == false
+  if !!(s =~ /^[0-1]{1,}$/) == false
     return false
   elsif s.to_i % 4 == 0
     return true
